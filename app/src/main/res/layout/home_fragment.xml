@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header">
+    <RelativeLayout
+        android:id="@+id/firstlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/secondlinear"
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/In_lay_First"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/pro"
+                android:text="Update"
+                android:textColor="@color/red"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_40" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/In_lay_second"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+
+            <TextView
+                android:id="@+id/profile"
+                android:background="@color/blue"
+                android:layout_width="@dimen/dp_180"
+                android:layout_height="@dimen/dp_40" />
+
+            <TextView
+                android:id="@+id/time"
+                android:background="@color/blue"
+                android:layout_toRightOf="@id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/lay_weather"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_360">
+            <LinearLayout
+                android:id="@+id/lay_yesterday"
+                android:orientation="vertical"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/yesterday_date"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/yesterday_fengli"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/yesterday_fengxiang"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/yesterday_high"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/yesterday_low"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/yesterday_type"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_forecast"
+                android:orientation="vertical"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/fore1_date"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore1_fengli"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore1_fengxiang"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore1_high"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore1_low"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore1_type"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay_forecast1"
+                android:orientation="vertical"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/fore2_date"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore2_fengli"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore2_fengxiang"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore2_high"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore2_low"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore2_type"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay_forecast3"
+                android:orientation="vertical"
+                android:textColor="@color/orange"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/fore3_date"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore3_fengli"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore3_fengxiang"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore3_high"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore3_low"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore3_type"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay_forecast4"
+                android:orientation="vertical"
+                android:textColor="@color/orange"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/fore4_date"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore4_fengli"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore4_fengxiang"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore4_high"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore4_low"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore4_type"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay_forecast5"
+
+                android:orientation="vertical"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/fore5_date"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore5_fengli"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore5_fengxiang"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore5_high"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore5_low"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+                <TextView
+                    android:id="@+id/fore5_type"
+                    android:textColor="@color/orange"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_60" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

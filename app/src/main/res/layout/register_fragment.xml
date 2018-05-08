@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/line1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/lay_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height_normal"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_4">
+
+                    <TextView
+                        android:id="@+id/ID"
+                        android:text="ID"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                    <EditText
+                        android:id="@+id/In_ID"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_toRightOf="@id/ID"
+                        android:background="@drawable/shape"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/tv_gray_deep"
+                        android:textSize="@dimen/dp_20"/>
+
+                    <TextView
+                        android:id="@+id/note_ID"
+                        android:text="不能为空"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_toRightOf="@id/In_ID"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/lay_FirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+
+                    <TextView
+                        android:id="@+id/text_FirstName"
+                        android:text="FirstName"
+
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                    <EditText
+                        android:id="@+id/In_FirstName"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/text_FirstName"
+
+                        android:background="@drawable/shape"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/tv_gray_deep"
+                        android:textSize="@dimen/text_size_normal"/>
+
+                    <TextView
+                        android:id="@+id/note_FirstName"
+                        android:text="不能为空"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_toRightOf="@id/In_FirstName"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/lay_SurName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+
+                    <TextView
+                        android:id="@+id/text_SurName"
+                        android:text="SurName"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                    <EditText
+                        android:id="@+id/In_SurName"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/text_SurName"
+
+                        android:background="@drawable/shape"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/tv_gray_deep"
+                        android:textSize="@dimen/text_size_normal"/>
+                    <TextView
+                        android:id="@+id/note_SurName"
+                        android:text="不能为空"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_toRightOf="@id/In_SurName"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lay_Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+                    <TextView
+                        android:id="@+id/text_Gender"
+                        android:text="Gender"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                    <CheckBox
+                        android:id="@+id/checkbox"
+                        android:text="Male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:layout_toRightOf="@id/text_Gender"/>
+                    <CheckBox
+                        android:id="@+id/checkbox1"
+                        android:text="FeMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/checkbox"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay_Course"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+                    <TextView
+                        android:id="@+id/text_Course"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:text="Course"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                    <Spinner
+                        android:layout_toRightOf="@id/text_Course"
+                        android:id="@+id/funitspinner"
+                        android:layout_width="@dimen/dp_180"
+                        android:layout_height="@dimen/dp_30"
+                        android:entries="@array/funitspinner">
+
+                    </Spinner>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay_DOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+
+                    <TextView
+                        android:id="@+id/text_DOB"
+                        android:text="DOB"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                    <TextView
+                        android:id="@+id/datedisplay"
+                        android:text="default time"
+                        android:layout_toRightOf="@id/text_DOB"
+                        android:layout_width="@dimen/dp_120"
+                        android:background="@drawable/shape"
+                        android:layout_height="@dimen/dp_30" />
+                    <Button
+                        android:id="@+id/chooseDate"
+                        android:text="Choose Date"
+                        android:background="@drawable/btn_bg_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/datedisplay"/>
+
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/lay_StuMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+                    <TextView
+                        android:id="@+id/text_StuMode"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:text="StuMode"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                    <Spinner
+                        android:id="@+id/StuModeSpinner"
+                        android:layout_toRightOf="@id/text_StuMode"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@drawable/shape"
+                        android:entries="@array/StuModespinner">
+
+                    </Spinner>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay_Suburb"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+                    <TextView
+                        android:id="@+id/text_Suburb"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:text="Suburb"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                    <Spinner
+                        android:layout_toRightOf="@id/text_Suburb"
+                        android:id="@+id/SururbSpinner"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@drawable/shape"
+                        android:entries="@array/Sururbspinner">
+
+                    </Spinner>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lay_Nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+                    <TextView
+                        android:text="Nation"
+                        android:id="@+id/text_Nationality"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                    <Spinner
+                        android:id="@+id/NationalitySpinner"
+                        android:layout_toRightOf="@id/text_Nationality"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@drawable/shape"
+                        android:entries="@array/Nationalityspinner">
+
+                    </Spinner>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lay_Fsport"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+                    <TextView
+                        android:text="Fsport"
+                        android:id="@+id/text_Fsport"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                    <Spinner
+                        android:id="@+id/FsportSpinner"
+                        android:layout_toRightOf="@id/text_Fsport"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@drawable/shape"
+                        android:entries="@array/Fsportspinner">
+
+                    </Spinner>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lay_Nalanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+                    <TextView
+                        android:id="@+id/text_Nalanguage"
+                        android:text="Nalanguage"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                    <Spinner
+                        android:id="@+id/NalanguageSpinner"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@drawable/shape"
+                        android:layout_toRightOf="@id/text_Nalanguage"
+                        android:entries="@array/Nalanguagespinner">
+
+                    </Spinner>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lay_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+
+                    <TextView
+                        android:id="@+id/text_Address"
+                        android:text="Address"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                    <EditText
+                        android:id="@+id/In_Address"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/text_Address"
+                        android:background="@drawable/shape"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/tv_gray_deep"
+                        android:textSize="@dimen/text_size_normal"/>
+                    <TextView
+                        android:id="@+id/note_Address"
+                        android:text="不能为空"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_toRightOf="@id/In_Address"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lay_FMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+
+                    <TextView
+                        android:id="@+id/text_FMovie"
+                        android:text="FMovie"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                    <EditText
+                        android:id="@+id/In_FMovie"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/text_FMovie"
+
+                        android:background="@drawable/shape"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/tv_gray_deep"
+                        android:textSize="@dimen/dp_10"/>
+
+                    <TextView
+                        android:id="@+id/note_FMovie"
+                        android:text="不能为空"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_toRightOf="@id/In_FMovie"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lay_CurJob"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+
+                    <TextView
+                        android:id="@+id/text_CurJob"
+                        android:text="Job"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                    <EditText
+                        android:id="@+id/In_CurJob"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/text_CurJob"
+
+                        android:background="@drawable/shape"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/tv_gray_deep"
+                        android:textSize="@dimen/dp_10"/>
+
+                    <TextView
+                        android:id="@+id/note_CurJob"
+                        android:text="不能为空"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_toRightOf="@id/In_CurJob"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lay_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+
+                    <TextView
+                        android:id="@+id/text_Email"
+                        android:text="Email"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                    <EditText
+                        android:id="@+id/In_Email"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/text_Email"
+
+                        android:background="@drawable/shape"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/tv_gray_deep"
+                        android:textSize="@dimen/dp_10"/>
+
+                    <TextView
+                        android:id="@+id/note_Email"
+                        android:text="不能为空"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_toRightOf="@id/In_Email"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay_PWD"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+
+                    <TextView
+                        android:id="@+id/text_PWD"
+                        android:text="PWD"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                    <EditText
+                        android:id="@+id/In_PWD"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center"
+                        android:inputType="textPassword"
+
+                        android:background="@drawable/shape"
+                        android:maxLines="1"
+                        android:layout_toRightOf="@id/text_PWD"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/tv_gray_deep"
+                        android:textSize="@dimen/dp_10"/>
+                    <TextView
+                        android:id="@+id/note_PWD"
+                        android:text="不能为空"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_toRightOf="@id/In_PWD"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lay_REPWD"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+
+                    <TextView
+                        android:id="@+id/text_REPWD"
+                        android:text="REPWD"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                    <EditText
+                        android:id="@+id/In_REPWD"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/text_REPWD"
+
+                        android:background="@drawable/shape"
+                        android:maxLines="1"
+                        android:inputType="textPassword"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/tv_gray_deep"
+                        android:textSize="@dimen/dp_10"/>
+                    <TextView
+                        android:id="@+id/note_REPWD"
+                        android:text="不能为空"
+                        android:layout_marginLeft="@dimen/dp_0.5"
+                        android:layout_marginTop="@dimen/dp_0.5"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_toRightOf="@id/In_REPWD"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/lay_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15">
+
+                    <Button
+                        android:id="@+id/cancel_button"
+                        android:text="Cancel"
+                        android:textSize="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/dp_90"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@drawable/btn_bg_red"
+                        android:gravity="center"
+                        android:onClick="toCancel"/>
+
+                    <Button
+                        android:id="@+id/confirm_Button"
+                        android:text="Confirm"
+                        android:onClick="toConfirm"
+                        android:textSize="@dimen/dp_10"
+                        android:background="@drawable/btn_bg_red"
+                        android:layout_marginLeft="@dimen/dp_220"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_30" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+</LinearLayout>

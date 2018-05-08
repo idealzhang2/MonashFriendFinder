@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lenovo_pc.monashfriendfinder.HomeActivity">
+        <RelativeLayout
+            android:id="@+id/firstlinear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+                <ImageView
+                    android:id="@+id/head"
+                    android:src="@drawable/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/secondlinear"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/In_lay_First"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40">
+
+            </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/In_lay_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40">
+                       <TextView
+                           android:id="@+id/profile"
+                           android:background="@color/blue"
+                           android:layout_width="@dimen/dp_180"
+                           android:layout_height="@dimen/dp_40" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:background="@color/blue"
+                            android:layout_toRightOf="@id/profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_40" />
+
+                </RelativeLayout>
+          <LinearLayout
+              android:id="@+id/lay_weather"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp_360">
+              <LinearLayout
+                  android:id="@+id/lay_yesterday"
+                  android:orientation="vertical"
+                  android:layout_width="@dimen/dp_60"
+                  android:layout_height="match_parent">
+                  <TextView
+                      android:id="@+id/yesterday_date"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/yesterday_fengli"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/yesterday_fengxiang"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/yesterday_high"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/yesterday_low"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/yesterday_type"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/lay_forecast"
+                  android:orientation="vertical"
+                  android:layout_width="@dimen/dp_60"
+                  android:layout_height="match_parent">
+                  <TextView
+                      android:id="@+id/fore1_date"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore1_fengli"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore1_fengxiang"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore1_high"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore1_low"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore1_type"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+              </LinearLayout>
+              <LinearLayout
+                  android:id="@+id/lay_forecast1"
+                  android:orientation="vertical"
+                  android:layout_width="@dimen/dp_60"
+                  android:layout_height="match_parent">
+                  <TextView
+                      android:id="@+id/fore2_date"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore2_fengli"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore2_fengxiang"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore2_high"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore2_low"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore2_type"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+              </LinearLayout>
+              <LinearLayout
+                  android:id="@+id/lay_forecast3"
+                  android:orientation="vertical"
+                  android:layout_width="@dimen/dp_60"
+                  android:layout_height="match_parent">
+                  <TextView
+                      android:id="@+id/fore3_date"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore3_fengli"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore3_fengxiang"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore3_high"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore3_low"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore3_type"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+              </LinearLayout>
+              <LinearLayout
+                  android:id="@+id/lay_forecast4"
+                  android:orientation="vertical"
+                  android:layout_width="@dimen/dp_60"
+                  android:layout_height="match_parent">
+                  <TextView
+                      android:id="@+id/fore4_date"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore4_fengli"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore4_fengxiang"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore4_high"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore4_low"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore4_type"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+              </LinearLayout>
+              <LinearLayout
+                  android:id="@+id/lay_forecast5"
+                  android:orientation="vertical"
+                  android:layout_width="@dimen/dp_60"
+                  android:layout_height="match_parent">
+                  <TextView
+                      android:id="@+id/fore5_date"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore5_fengli"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore5_fengxiang"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore5_high"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore5_low"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+                  <TextView
+                      android:id="@+id/fore5_type"
+                      android:layout_width="@dimen/dp_40"
+                      android:layout_height="@dimen/dp_60" />
+              </LinearLayout>
+          </LinearLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>
